@@ -306,8 +306,7 @@ header .contact .btn {
 
 /*HOME*/
 #home-top {
-  background: url("../images/home-bg.png") repeat-x scroll center bottom;
-  min-height: 523px;
+  background: url("../images/home-bg.png") repeat-x scroll center bottom #1f86db;
 }
 
 .home {
@@ -323,16 +322,34 @@ header .contact .btn {
   font-size: 16px;
 }
 
+.home .home-form {
+  padding-bottom: 20px;
+}
+
+.home .home-form select {
+  height: 40px;
+}
+
+.home .home-form .form-group {
+  float: left;
+  margin: 0;
+  width: 70%;
+
+}
+
+.home .home-form .btn {
+  float: right;
+  font-size: 21px;
+  height: 40px;
+  width: 25%;
+}
+
 #video {
-  height: 450px;
+  padding-top: 20px;
 }
 
 #video img {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 /*Banks Logos*/
@@ -722,6 +739,72 @@ header .contact .btn {
   position: relative;
 }
 
+#testimonials .carousel-indicators {
+  position: static;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#testimonials .carousel-indicators li {
+  background-color: #e4f5ff;
+  border-color: #e4f5ff;
+}
+
+#testimonials .carousel-indicators li.active {
+  background-color: #8dc63f;
+  border-color: #8dc63f;
+}
+
+/* News Letter ----------- */
+#news-letter {
+  background: url('../images/news-letter.png') no-repeat 53% 0;
+  height: 78px;
+}
+
+#news-letter .news-form {
+  margin-top: 22px;
+}
+
+#news-letter .news-form label {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 10px;
+}
+
+#news-letter .social > * {
+  margin: 0;
+  margin-right: 10px;
+}
+
+#news-letter .social {
+  text-align: center;
+  line-height: 78px;
+}
+
+#news-letter .social p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#news-letter .social p .bold {
+  color: #6dcff6;
+}
+
+#news-letter input[type="email"] {
+  display: inline-block;
+  width: 35%;
+}
+
+#news-letter .btn {
+  position: relative;
+  top: -3px;
+}
+
 /* Footer ----------- */
 footer {
   background: #e2e2e2;
@@ -743,6 +826,20 @@ footer a {
   color: #707070;
 }
 
+footer .show-xs ul {
+  width: 100%;
+  text-align: center;
+}
+
+footer .show-xs ul li {
+  display: inline-block;
+  padding: 5px 5%;
+}
+
+footer .show-xs ul li a {
+  color: #707070;
+}
+
 /* Bottom ----------- */
 #bottom {
   color: #707070;
@@ -753,10 +850,18 @@ footer a {
   line-height: normal;
 }
 
-/* iPhone (portrait) ----------- */
+#bottom p {
+  margin: 0;
+}
+
+/* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
     width: 95%;
+  }
+
+  #news-letter .social img {
+    width: 30px;
   }
 }
 
@@ -792,6 +897,45 @@ footer a {
   .more-info-box .container > a {
     left: 25%;
     width: 50%;
+  }
+
+  #bottom p {
+    width: 100%;
+    text-align: center;
+  }
+
+  #news-letter {
+    background: none;
+    height: auto;
+  }
+
+  #news-letter .row > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: normal;
+  }
+
+  #news-letter .row > div:first-child {
+    background-color: #11a3dd;
+  }
+
+  #news-letter .row > div:last-child {
+    background-color: #004993;
+    font-size: 12px;
+  }
+  #news-letter .social {
+    text-align: left;
+  }
+  #news-letter .social p .break {
+    display: block;
+  }
+
+  #news-letter .social img {
+    vertical-align: top;
+  }
+
+  .home {
+    text-align: center;
   }
 }
 
@@ -838,6 +982,28 @@ footer a {
 
   #testimonials .row div:last-child {
     margin-bottom: 0;
+  }
+
+  #news-letter .news-form {
+    margin-top: 5px;
+  }
+  #news-letter .news-form label {
+    margin: 0;
+    display: block;
+    margin-bottom: 5px;
+  }
+  #news-letter .news-form input[type="email"] {
+    width: 50%;
+  }
+
+  .home p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .home h1 {
+    font-size: 30px;
+    line-height: normal;
   }
 }
 
