@@ -48,6 +48,10 @@ a:hover {
 
 /* Helpers ----------- */
 
+.less-space {
+  margin: 0 -15px;
+}
+
 .show-xs {
   display: none;
 }
@@ -1604,7 +1608,7 @@ footer .show-xs ul li a {
   font-weight: bold;
 }
 
-.rates .number {
+.number {
   background-color: #67ccff;
   border-radius: 50px;
   color: #ffffff;
@@ -1731,6 +1735,196 @@ footer .show-xs ul li a {
 
 .rates-form .btn {
   width: 100%;
+}
+
+/* Rates Lightbox ----------- */
+
+.rates-lb {
+  background: url("../images/rates-lb.png") repeat-x scroll 50% 100% #0060C3;
+  border-radius: 4px;
+  min-height: 600px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.rates-lb .close {
+  background-color: #F26522;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+  color: #FFFFFF;
+  display: block;
+  float: none;
+  font-size: 20px;
+  font-weight: normal;
+  height: 28px;
+  line-height: 20px;
+  opacity: 1;
+  text-align: center;
+  width: 28px;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+}
+
+.rates-lb > .row > div:first-child {
+  text-align: center;
+}
+
+.rates-lb h2 {
+  color: #FFFFFF;
+  font-size: 50px;
+  line-height: normal;
+  margin: 0 0 20px;
+}
+
+.sub {
+  background: url("../images/bg-2.png") repeat-y 50% 0;
+  border-radius: 50px;
+  color: #FFFFFF;
+  /*background-color: #0161c3;*/
+  overflow: hidden;
+}
+
+.sub > div {
+  float: left;
+  line-height: normal;
+  padding: 5px 0;
+}
+
+.sub div:first-child {
+  /*background-color: #1f83e9;*/
+  font-size: 30px;
+  width: 50%;
+}
+
+.sub div:last-child {
+  font-size: 15px;
+  width: 50%;
+  padding-top: 12px;
+}
+
+.rate-details {
+  background: url("../images/t-1.png") repeat 0 0;
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #003366;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.rates-lb .less-space {
+  margin: 0 -20px;
+}
+
+.rates-lb .table-wrapper {
+  padding: 0 20px;
+}
+
+.rates-lb table td {
+  background: url("../images/t-1.png") repeat-x 0 100%;
+  color: #000000;
+  font-weight: bold;
+  border: none!important;
+  text-align: left;
+}
+
+.rates-lb table td:first-child {
+  padding-left: 0;
+}
+
+.rates-lb table td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+
+.rates-details-form {
+  box-shadow: 0 0 3px 0 #074e92;
+  background-color: #FFFFFF;
+  padding: 0 35px;
+  border-radius: 4px;
+}
+
+.rates-details-form label {
+  font-weight: normal;
+}
+
+.rates-details-form h3 {
+  background-color: #F7941D;
+  border-radius: 4px 4px 0 0;
+  color: #FFFFFF;
+  font-size: 21px;
+  line-height: 55px;
+  margin: 0 -35px 10px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.rates-details-form .title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.rates-details-form .title .pull-left {
+  padding: 10px 0;
+}
+
+.price-tip {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #ffffff 0%, #eaebec 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(100%,#eaebec)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #ffffff 0%,#eaebec 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #ffffff 0%,#eaebec 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #ffffff 0%,#eaebec 100%); /* IE10+ */
+  background: linear-gradient(to right,  #ffffff 0%,#eaebec 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaebec',GradientType=1 ); /* IE6-9 */
+
+  font-size: 11px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.price-tip span {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #9ed852;
+  border-radius: 50px;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.rates-details-form fieldset {
+  border-bottom: 1px solid #E9E9E9;
+  padding: 10px 0;
+}
+
+.rates-details-form fieldset:last-child {
+  text-align: center;
+}
+
+.rates-details-form fieldset:last-child .btn {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 54px;
+  width: 50%;
+}
+
+.rates-details-form fieldset .checkbox {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.rates-details-form .form-group {
+  margin-bottom: 10px;
+}
+
+.rates-lb .logo {
+  width: 80%;
+  margin-top: 10%;
 }
 
 /* iPhone ----------- */
@@ -1862,6 +2056,23 @@ footer .show-xs ul li a {
     text-align: center;
     font-size: 21px;
   }
+
+  .rates-lb > .row > div {
+    margin-bottom: 20px;
+  }
+
+  .rates-lb > .row > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .rates-lb {
+    background-position: 50% 0;
+    background-color: #55a90b;
+  }
+
+  .rates-lb .logo {
+    margin-top: 0;
+  }
 }
 
 /* SMALL and less ----------- */
@@ -1957,6 +2168,10 @@ footer .show-xs ul li a {
 
   .widget > h3 {
     font-size: 13px;
+  }
+
+  .form-horizontal .control-label {
+    text-align: left;
   }
 }
 
