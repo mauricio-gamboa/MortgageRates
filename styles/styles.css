@@ -1927,6 +1927,19 @@ footer .show-xs ul li a {
   margin-top: 10%;
 }
 
+/* Contact Us Page ----------- */
+.contact-page {
+  background: url("../images/contact-bg.png") no-repeat 50% 100% #FFFFFF;
+}
+
+.contact-page h2 {
+ background: url("../images/bg-3.png") no-repeat 50% 100%;
+ color: #003366;
+ font-size: 19px;
+ padding-bottom: 17px;
+ line-height: normal;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
