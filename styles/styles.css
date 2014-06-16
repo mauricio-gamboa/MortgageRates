@@ -30,6 +30,22 @@ a:hover {
   background-color: #a3de57;
 }
 
+.table-striped > tbody > tr:nth-child(2n+1) > td, 
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+  background-color: #f6fcff;
+  border-bottom: 1px solid #e2f2fb;
+  border-top: 1px solid #e2f2fb;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td, 
+.table-striped > tbody > tr:nth-child(2n) > th {
+ border: none;
+}
+
+.table > thead > tr > th {
+  border-bottom-width: 1px;
+}
+
 /* Helpers ----------- */
 
 .show-xs {
@@ -41,6 +57,20 @@ a:hover {
   display: inline-block;
   line-height: 14px;
   padding-right: 20px;
+}
+
+.arrow-2 {
+  background: url("../images/arrow-2.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+  display: inline-block;
+  line-height: 20px;
+  padding-right: 25px;
+}
+
+.arrow-3 {
+  background: url("../images/arrow-3.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+  display: inline-block;
+  line-height: normal;
+  padding-right: 15px;
 }
 
 /*HEADER*/
@@ -1425,6 +1455,10 @@ footer .show-xs ul li a {
   margin: 0 -20px;
 }
 
+.rates-page h2 {
+  padding-top: 20px;
+}
+
 .sub-page h3 {
   font-size: 18px;
   margin-bottom: 20px;
@@ -1612,6 +1646,7 @@ footer .show-xs ul li a {
   color: #004993;
   font-size: 27px;
   font-weight: bold;
+  text-align: center;
 }
 
 .rates .s-payment span {
@@ -1634,6 +1669,68 @@ footer .show-xs ul li a {
   display: block;
   color: #004993;
   font-size: 16px;
+}
+
+.rates-footer {
+  color: #696969;
+  font-size: 12px;
+  line-height: normal;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.rates-footer > div {
+  float: left;
+  width: 33.33%;
+}
+
+.rates-footer > div > img {
+  margin-top: -20px;
+}
+
+.rates-form {
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eaeaea)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+
+  border-bottom: #eaeaea;
+  margin: 0 -20px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.rates-form h4 {
+  font-size: 14px;
+  margin: 0;
+  border-bottom: 1px solid #EFEFEF;
+  margin: 0 -20px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.rates-form .row {
+  margin-bottom: 5px;
+}
+
+.rates-form .row:last-child {
+  margin-bottom: 0;
+}
+
+.rates-form form {
+  padding-top: 20px;
+}
+
+.rates-form form label {
+  font-weight: normal;
+}
+
+.rates-form .btn {
+  width: 100%;
 }
 
 /* iPhone ----------- */
@@ -1769,6 +1866,12 @@ footer .show-xs ul li a {
 
 /* SMALL and less ----------- */
 @media (max-width: 992px) {
+  .hide-s {
+    display: none !important;
+  }
+  .show-s {
+    display: block;
+  }
   .year {
     height: 40px;
     width: 40px;
@@ -1857,7 +1960,7 @@ footer .show-xs ul li a {
   }
 }
 
-/* Between Medium and Small ----------- */
+/* Between Small and XSmall ----------- */
 @media (min-width: 768px) and (max-width: 992px) {
   .logo img {
     width: 95%;
@@ -1892,9 +1995,27 @@ footer .show-xs ul li a {
   .home-article {
     min-height: 208px;
   }
+
+  .rates-form form label {
+    font-size: 12px;
+  }
 }
 /* Between Large and Medium ----------- */
-@media (min-width: 992px) and (max-width: 1200px) { }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .hide-m {
+    display: none !important;
+  }
+  .show-m {
+    display: block;
+  }
+}
 
 /* Between XLarge and Large ----------- */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+  .hide-xl {
+    display: none !important;
+  }
+  .show-xl {
+    display: block;
+  }
+}
