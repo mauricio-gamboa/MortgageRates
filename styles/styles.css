@@ -70,7 +70,6 @@ a:hover {
 
 .arrow-1 {
   background: url("../images/arrow-1.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
-  display: inline-block;
   line-height: 14px;
   padding-right: 20px;
 }
@@ -1551,6 +1550,12 @@ footer .show-xs ul li a {
   margin: 0;
 }
 
+.sub-page h2 .arrow-1,
+.sub-page h3 .arrow-1 {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
 .sub-page,
 .search-page {
   padding: 20px;
@@ -2073,6 +2078,81 @@ footer .show-xs ul li a {
   margin-bottom: 0;
 }
 
+/* Main Rates Page ----------- */
+
+.single-main-rate {
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
+.single-main-rate:nth-child(2n+1) {
+  background-color: #f6fcff;
+  border-top: 1px solid #e2f2fb;
+  border-bottom: 1px solid #e2f2fb;
+}
+
+.single-main-rate:last-child {
+  margin-bottom: -20px;
+  border-radius: 0 0 4px 4px;
+  border-bottom: none;
+}
+
+.single-main-rate > h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.single-main-rate h4 {
+  background-color: #004993;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.single-main-rate .table td {
+  border: none;
+  border-bottom: 2px solid #efefef;
+  vertical-align: middle !important;
+  padding: 0;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.single-main-rate .table tr:last-child td {
+  border: none;
+}
+
+.single-main-rate td > img {
+  max-width: 115px;
+}
+
+.single-main-rate td > .btn {
+  width: 100%;
+}
+
+.single-main-rate td > span {
+  display: block;
+  width: 100%;
+  color: #004993;
+  font-size: 25px;
+}
+
+.single-main-rate .year {
+  height: 45px;
+  width: 45px;
+  font-size: 11px;
+  padding-top: 8px;
+  color: #FFFFFF;
+}
+
+.single-main-rate .year > span {
+  font-size: 20px;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
@@ -2236,11 +2316,11 @@ footer .show-xs ul li a {
 
 /* SMALL and less ----------- */
 @media (max-width: 992px) {
-  .hide-s {
-    display: none !important;
-  }
   .show-s {
     display: block;
+  }
+  .hide-s {
+    display: none !important;
   }
   .year {
     height: 40px;
