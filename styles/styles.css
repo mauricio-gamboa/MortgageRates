@@ -56,6 +56,33 @@ a:hover {
   padding: 0 15px;
 }
 
+.shadow {
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 0 3px 0px #e1e1e1;
+  border-radius: 5px;
+}
+
+.circle-1,
+.circle-2 {
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  display: inline-block;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.circle-1 {
+  background-color: #67ccff;
+}
+
+.circle-2 {
+  background-color: #8dc63f;
+}
+
 /* Helpers ----------- */
 
 .less-space {
@@ -253,6 +280,10 @@ header .icon-phone {
   vertical-align: sub;
   width: 16px;
   margin-right: 10px;
+}
+
+.icon-10 {
+  background: url("../images/icon-10.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
 }
 
 .social-icon {
@@ -2218,6 +2249,164 @@ footer .show-xs ul li a {
   margin-bottom: 0;
 }
 
+/* Calculators Page ----------- */
+.calculators-page .title .icon {
+  display: inline-block;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 22px;
+}
+
+.calculators-page .title .icon.icon-10 {
+  background-size: 22px auto;
+}
+
+.calculators-page .news-box > h4 {
+  border-bottom: 2px solid #EFEFEF;
+  margin: 0 0 10px;
+  padding: 12px 0;
+}
+
+.calculators-page .news-box > h4 a {
+  font-size: 13px;
+}
+
+.calculators-page .results {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.calculators-page .results li {
+  width: 50%;
+  float: left;
+}
+
+.single-calculator {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.single-calculator:last-child {
+  margin-bottom: 0;
+}
+
+.single-calculator:hover {
+  border-color: #8dc63f;
+}
+
+.single-calculator h3 {
+  color: #004993;
+  font-size: 18px;
+  line-height: normal;
+  margin: 10px 0;
+  padding-left: 45px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.single-calculator h3 .year {
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.single-calculator-1 h3 .year {
+  background-image: url("../images/icon-6.png");
+}
+
+.single-calculator-2 h3 .year {
+  background-image: url("../images/icon-7.png");
+}
+
+.single-calculator-3 h3 .year {
+  background-image: url("../images/icon-8.png");
+}
+
+.single-calculator-4 h3 .year {
+  background-image: url("../images/icon-9.png");
+}
+
+.single-calculator p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.single-calculator img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.single-calculator .btn {
+  margin-top: 40%;
+  width: 90%;
+}
+
+.single-calculator .show-xs > .row {
+  border-top: 1px solid #ededed;
+}
+
+.faqs .faq {
+  border-bottom: 2px solid #EFEFEF;
+  padding: 15px 0;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.faqs .faq > * {
+  float: left;
+}
+
+.faqs .faq img {
+  width: 10%;
+}
+
+.faqs .faq p {
+  color: #707070;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.faqs .faq > div {
+  width: 70%;
+  padding: 0 15px;
+}
+
+.faqs .faq .meta {
+  width: 20%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.faqs .faq .meta > div {
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.faqs .faq .meta > div:first-child {
+  border-right: 1px solid #eaeaea;
+}
+
+.faqs .faq .meta > div span {
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.faqs > .arrow-1 {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
@@ -2393,6 +2582,25 @@ footer .show-xs ul li a {
   .apply-content .row > div:last-child {
     margin-bottom: 0;
   }
+
+  .single-calculator h3 .year {
+    margin: 0;
+    left: 15px;
+  }
+
+  .single-calculator h3 {
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+
+  .single-calculator .btn {
+    margin-top: 25%;
+  }
+
+  .single-calculator p {
+    padding: 0 15px;
+  }
+
 }
 
 /* SMALL and less ----------- */
@@ -2493,6 +2701,33 @@ footer .show-xs ul li a {
   .form-horizontal .control-label {
     text-align: left;
   }
+
+  .faqs .faq > div {
+    width: 90%;
+  }
+
+  .faqs .faq .meta {
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .faqs .faq .meta > div {
+    text-align: left;
+    width: auto;
+    padding-right: 15px;
+  }
+
+  .faqs .faq .meta > div + div {
+   padding-left: 15px; 
+  }
+
+  .faqs .faq .meta > div span {
+    display: inline-block;
+  }
+
+  .calculators-page .results li {
+    width: 100%;
+  }
 }
 
 /* Between Small and XSmall ----------- */
@@ -2533,6 +2768,30 @@ footer .show-xs ul li a {
 
   .rates-form form label {
     font-size: 12px;
+  }
+
+  .single-calculator .btn {
+    margin: 0;
+  }
+
+  .single-calculator h3 {
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 35px;
+    padding-top: 0;
+  }
+
+  .single-calculator h3 .year  {
+    background-size: 50% auto;
+    height: 30px;
+    width: 30px;
+  }
+
+  .single-calculator p {
+    line-height: normal;
+    font-size: 13px;
+    margin: 5px 0;
   }
 }
 /* Between Large and Medium ----------- */
