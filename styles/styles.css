@@ -46,6 +46,16 @@ a:hover {
   border-bottom-width: 1px;
 }
 
+.site-title {
+  background-color: #004993;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 32px;
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
 /* Helpers ----------- */
 
 .less-space {
@@ -953,6 +963,8 @@ header .icon-phone {
 }
 
 .testimonial blockquote p {
+  font-size: 13px;
+  line-height: normal;
   margin: 0;
 }
 
@@ -1960,6 +1972,7 @@ footer .show-xs ul li a {
 
 .rates-details-form label {
   font-weight: normal;
+  color: #303030;
 }
 
 .rates-details-form h3 {
@@ -1981,6 +1994,10 @@ footer .show-xs ul li a {
 
 .rates-details-form .title .pull-left {
   padding: 10px 0;
+}
+
+.rates-details-form .number {
+  margin-right: 10px;
 }
 
 .price-tip {
@@ -2153,6 +2170,54 @@ footer .show-xs ul li a {
   font-size: 20px;
 }
 
+/* Apply Online Page ----------- */
+.apply-online .home-top {
+  padding-bottom: 25px;
+}
+.apply-online .home-top li {
+  background: url("../images/list-1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #303030;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 10px;
+  padding-left: 34px;
+  text-align: left;
+}
+
+.apply-online .rates-details-form label {
+  display: block;
+  text-align: left;
+}
+
+.apply-online .home-top p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.apply-online .home-top p strong {
+  color: #303030;
+}
+
+.apply-title {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.apply-title img {
+  display: inline-block;
+  width: 90%;
+}
+
+.apply-content p {
+  line-height: normal;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.apply-content p:last-child {
+  margin-bottom: 0;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
@@ -2310,6 +2375,22 @@ footer .show-xs ul li a {
   }
 
   .contact-page .row > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .rates-details-form h3 {
+    font-size: 15px;
+  }
+
+  .rates-details-form fieldset:last-child .btn {
+    width: 100%;
+  }
+
+  .apply-content .row > div {
+    margin-bottom: 25px;
+  }
+
+  .apply-content .row > div:last-child {
     margin-bottom: 0;
   }
 }
