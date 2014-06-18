@@ -60,6 +60,11 @@ a:hover {
   border: 1px solid #e1e1e1;
   box-shadow: 0 0 3px 0px #e1e1e1;
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.shadow:last-child {
+  margin-bottom: 0;
 }
 
 .circle-1,
@@ -2603,6 +2608,94 @@ footer .show-xs ul li a {
   font-weight: normal;
 }
 
+/* First Time Page ----------- */
+
+.banner img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery .title {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 15px 25px;
+  line-height: normal;
+}
+
+.gallery .title h5 {
+  color: #004993;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.gallery .title p {
+  margin: 0;
+}
+
+.gallery-wrapper {
+  padding: 15px 25px;
+  overflow: hidden;
+}
+
+.gallery-wrapper > * {
+  float: left;
+}
+
+.gallery-wrapper img {
+  width: 30%;
+}
+
+.gallery-wrapper div {
+  width: 70%;
+  padding-left: 25px;
+}
+
+.gallery-wrapper h6 {
+  color: #004993;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.gallery-controller ul {
+  margin: 0;
+}
+
+.gallery-controller li a {
+  background-color: #E4F5FF;
+  color: #004993;
+  display: block;
+  padding: 7px 25px;
+}
+
+.gallery-controller li a:hover {
+  background-color: #f2faff;
+}
+
+.gallery-controller li.active a {
+  background-color: #ffffff;
+  color: #8dc63f;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.faqs.posts .faq {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.faqs.posts .faq > div {
+  width: 90%;
+}
+
+.faqs.posts .faq h3 {
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.faqs.posts .faq p {
+  line-height: 20px;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
@@ -2803,6 +2896,21 @@ footer .show-xs ul li a {
 
   #works-video .video {
     margin-top: 20px;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+  }
+  
+  .gallery-wrapper img {
+    width: 50%;
+    float: none;
+  }
+
+  .gallery-wrapper > div {
+    width: 100%;
+    text-align: left;
+    padding: 0
   }
 }
 
