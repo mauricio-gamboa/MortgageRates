@@ -115,6 +115,12 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.flag {
+  background: url("../images/icon-21.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+  line-height: 16px;
+  padding-left: 20px;
+}
+
 .arrow-1 {
   background: url("../images/arrow-1.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
   line-height: 14px;
@@ -335,6 +341,10 @@ header .icon-phone {
 
 .icon-19 {
   background: url("../images/icon-19.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+}
+
+.icon-20 {
+  background: url("../images/icon-20.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
 }
 
 .social-icon {
@@ -2812,6 +2822,137 @@ footer .show-xs ul li a {
   margin-bottom: 20px;
 }
 
+/* Questions Page ----------- */
+.questions-form {
+  background-color: #e4f5ff;
+  padding: 25px;
+}
+
+.questions-form .btn {
+  width: 100%;
+}
+
+.questions-form p {
+  background: url("../images/icon-20.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+  color: #004993;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 0;
+  padding-left: 35px;
+}
+
+.questions .faq {
+  padding: 15px 25px;
+}
+
+.questions .news-box {
+  border-bottom: 2px solid #efefef;
+}
+
+.questions .news-box .title {
+  background-color: #FFFFFF;
+  color: #004993;
+}
+
+.questions .arrow-1 {
+  display: block;
+  text-align: center;
+  background: none;
+}
+
+.faq-form {
+  padding: 25px;
+}
+
+.faq-form label {
+  font-weight: normal;
+  display: block;
+}
+
+.faq-form p {
+  color: #707070;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 25px;
+  border-top: 1px solid #f6f6f6;
+  margin-top: 25px;
+}
+
+.questions.answer .faqs .faq > div {
+  width: 90%;
+}
+
+.counter {
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.counter span {
+  display: block;
+  text-indent: -9999px;
+}
+
+.counter .up {
+  background: url("../images/up.png") no-repeat 50% 50%;
+  height: 8px;
+}
+
+.counter .down {
+  background: url("../images/down.png") no-repeat 50% 50%;
+  height: 8px;
+}
+
+.counter .count {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.counter .count {
+  float: left;
+}
+
+.counter .flag {
+  float: right;
+  color: #303030;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.tabs-wrapper .nav {
+  border: medium none;
+  position: relative;
+  z-index: 1;
+}
+
+.tabs-wrapper .nav > li {
+  margin-right: 10px;
+}
+
+.tabs-wrapper .nav > li:last-child {
+  margin-right: 0;
+}
+
+.tabs-wrapper .nav > li > a {
+  background-color: #efefef;
+  color: #303030;
+  outline: none;
+  box-shadow: 0 0 3px 0 #e1e1e1;
+  font-size: 12px;
+}
+
+.tabs-wrapper .nav > li.active > a,
+.tabs-wrapper .nav > li.active > a:hover {
+  color: #004993;
+  background-color: #e4f5ff;
+}
+
+.tabs-wrapper .tab-content {
+  position: relative;
+  z-index: 2;
+}
+
 /* iPhone ----------- */
 @media (max-width : 568px) {
   #banks-logos .container .row > div img {
@@ -3077,6 +3218,22 @@ footer .show-xs ul li a {
   .about-steps h3 {
     text-align: center;
   }
+
+  .questions-form .row > div:first-child {
+    text-align: center;
+  }
+
+  .questions-form .row > div {
+    margin-bottom: 20px;
+  }
+
+  .questions-form .row > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .tabs-wrapper .nav > li {
+    margin-right: 4px;
+  }
 }
 
 /* SMALL and less ----------- */
@@ -3317,6 +3474,10 @@ footer .show-xs ul li a {
     bottom: -51px;
     left: 0;
     position: absolute;
+  }
+
+  .questions-form .row > div:last-child {
+    margin-top: 20px;
   }
 }
 /* Between Large and Medium ----------- */
