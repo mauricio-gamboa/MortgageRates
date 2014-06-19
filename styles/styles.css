@@ -347,6 +347,10 @@ header .icon-phone {
   background: url("../images/icon-20.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
 }
 
+.icon-22 {
+  background: url("../images/icon-22.png") no-repeat scroll 0 50% rgba(0, 0, 0, 0);
+}
+
 .social-icon {
   border-radius: 50px;
   display: inline-block;
@@ -659,6 +663,7 @@ header .icon-phone {
 
 .home-top h1 {
   font-size: 36px;
+  color: #003366;
 }
 
 .home-top p {
@@ -667,7 +672,7 @@ header .icon-phone {
 }
 
 .home-top .home-form {
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .home-top .home-form select {
@@ -744,15 +749,21 @@ header .icon-phone {
 }
 
 .news-box .title a {
-  font-size: 10px;
-  text-transform: uppercase;
-  position: absolute;
-  width: 20%;
-  right: 0;
-  top: 0;
-  text-align: center;
-  border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  font-size: 13px;
+  height: 100%;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 25%;
+}
+
+.news-box .title a span {
+  color: #FFFFFF;
 }
 
 .news-box .title a .icon-plus {
@@ -776,7 +787,7 @@ header .icon-phone {
 
 .news-box li img {
   height: 60px;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .year {
@@ -1000,7 +1011,7 @@ header .icon-phone {
 .home-article {
   overflow: hidden;
   padding: 20px 0;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 2px solid #efefef;
 }
 
 .home-article:last-child {
@@ -1160,6 +1171,7 @@ footer {
   line-height: 20px;
 }
 footer h6 {
+  color: #707070;
   font-size: 13px;
   margin: 0;
 }
@@ -1360,18 +1372,21 @@ footer .show-xs ul li a {
   border: none;
 }
 
-.aside-accordion .panel-title > a {
+.panel-title > a {
   display: block;
   font-size: 13px;
   outline: none;
 }
 
-.aside-accordion .panel-title > a > .arrow-4 {
- float: right;
- margin-top: 7px;
+.panel-title > a > .arrow-4 {
+  float: right;
 }
 
-.aside-accordion .panel-title > a:hover {
+.aside-accordion .panel-title > a > .arrow-4 {
+  margin-top: 7px;
+}
+
+.panel-title > a:hover {
   color: #003366;
 }
 
@@ -1844,7 +1859,7 @@ footer .show-xs ul li a {
 }
 
 .rates td > img {
-  max-width: 60%;
+  width: 100%;
 }
 
 .rates td > span {
@@ -1892,13 +1907,12 @@ footer .show-xs ul li a {
   padding: 0 20px;
 }
 
-.rates-footer > div {
-  float: left;
-  width: 33.33%;
+.rates-footer .row div > img {
+  margin-top: -20px;
 }
 
-.rates-footer > div > img {
-  margin-top: -20px;
+.rates-footer .row div:last-child {
+  text-align: center;
 }
 
 .rates-form {
@@ -1918,12 +1932,11 @@ footer .show-xs ul li a {
 }
 
 .rates-form h4 {
+  border-bottom: 1px solid #efefef;
+  color: #303030;
   font-size: 14px;
-  margin: 0;
-  border-bottom: 1px solid #EFEFEF;
   margin: 0 -20px;
-  padding: 0 20px;
-  padding-bottom: 20px;
+  padding: 0 20px 20px;
 }
 
 .rates-form .row {
@@ -2240,7 +2253,7 @@ footer .show-xs ul li a {
 }
 
 .single-main-rate td > img {
-  max-width: 115px;
+  width: 100%;
 }
 
 .single-main-rate td > .btn {
@@ -2919,21 +2932,29 @@ footer .show-xs ul li a {
   font-weight: normal;
 }
 
+.tabs-wrapper ul {
+  margin: 0;
+}
+
+.tabs-wrapper > nav {
+  margin: 0;
+}
+
 .tabs-wrapper .nav {
   border: medium none;
   position: relative;
   z-index: 1;
 }
 
-.tabs-wrapper .nav > li {
+.tabs-wrapper > .nav > li {
   margin-right: 10px;
 }
 
-.tabs-wrapper .nav > li:last-child {
+.tabs-wrapper > .nav > li:last-child {
   margin-right: 0;
 }
 
-.tabs-wrapper .nav > li > a {
+.tabs-wrapper > .nav > li > a {
   background-color: #efefef;
   color: #303030;
   outline: none;
@@ -2941,8 +2962,8 @@ footer .show-xs ul li a {
   font-size: 12px;
 }
 
-.tabs-wrapper .nav > li.active > a,
-.tabs-wrapper .nav > li.active > a:hover {
+.tabs-wrapper > .nav > li.active > a,
+.tabs-wrapper > .nav > li.active > a:hover {
   color: #004993;
   background-color: #e4f5ff;
 }
@@ -2982,8 +3003,8 @@ footer .show-xs ul li a {
   }
 
   .page-title h1 {
-    line-height: 138px;
     float: none;
+    padding-top: 30px;
   }
 
   .post {
@@ -3018,8 +3039,13 @@ footer .show-xs ul li a {
   .navbar-brand img {
     width: 100%;
   }
+
+  .news-box .title {
+    font-size: 14px;
+  }
+
   .news-box .title a {
-    width: 30%;
+    width: 15%;
   }
 
   #news .row > div {
@@ -3228,10 +3254,6 @@ footer .show-xs ul li a {
     margin-bottom: 0;
   }
 
-  .tabs-wrapper .nav > li {
-    margin-right: 4px;
-  }
-
   #top.apply-online {
     background: url("../images/bg-small.png") repeat-x scroll center bottom #0567c7;
   }
@@ -3273,6 +3295,79 @@ footer .show-xs ul li a {
   .questions-form p {
     text-align: left;
   }
+
+  .rates-footer {
+    padding: 0 15px;
+  }
+
+  .rates-footer .row div {
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .rates-footer .row > div:last-child {
+    border-top: 1px solid #ececec;
+    padding-top: 25px;
+    margin-top: 20px;
+  }
+
+  .rates-footer .row div > img {
+    max-width: 100%;
+  }
+
+  .results li {
+    width: 100%;
+  }
+
+  .single-main-rate td > span {
+    font-size: 20px;
+  }
+
+  .single-main-rate td > .btn {
+    font-size: 11px;
+  }
+
+  #banks-logos h4 {
+    font-size: 15px;
+  }
+
+  .news-box li img {
+    height: 35px !important;
+  }
+
+  .find-rate .rates-nav .nav > li > a {
+    font-size: 11px;
+    padding: 7px;
+  }
+
+  .tabs-wrapper > nav {
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    background-color: #f3f3f3;
+    border-bottom: none;
+  }
+
+  .tabs-wrapper .tab-pane .shadow {
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+  }
+
+  .tabs-wrapper .navbar-brand {
+    color: #303030;
+    font-size: 15px;
+    font-weight: bold;
+    width: 65%;
+  }
+
+  .tabs-wrapper .navbar-toggle,
+  .tabs-wrapper .navbar-toggle:hover {
+    background-color: #68ccff;
+    border: none;
+  }
+
+  .tabs-wrapper .navbar-toggle span {
+    background-color: #FFFFFF !important;
+  }
 }
 
 /* S and less ----------- */
@@ -3280,9 +3375,11 @@ footer .show-xs ul li a {
   .show-s {
     display: block;
   }
+
   .hide-s {
     display: none !important;
   }
+
   .year {
     height: 40px;
     width: 40px;
@@ -3291,29 +3388,36 @@ footer .show-xs ul li a {
     padding-top: 8px;
     margin-top: 2%;
   }
+
   .year span {
     font-size: 20px;
     line-height: 9px;
   }
+
   .news-box li {
     padding: 5px;
   }
+
   .news-box li img {
-    height: 35px;
+    height: 50px;
     margin-left: 2%;
     margin-top: 2%;
   }
+
   .rate-tip {
     font-size: 23px;
   }
+
   .news-box .rate-tip {
     text-align: center;
     border-radius: 20px;
     width: auto;
   }
+
   .news-box .rate-tip > span {
     display: block;
   }
+
   .rate-tip a.btn {
     float: none;
   }
@@ -3327,26 +3431,29 @@ footer .show-xs ul li a {
   }
 
   #news-letter .news-form {
-    margin-top: 5px;
+    margin-top: 0;
   }
+
   #news-letter .news-form label {
     margin: 0;
     display: block;
     margin-bottom: 5px;
   }
+
   #news-letter .news-form input[type="email"] {
     width: 50%;
   }
 
   .home-top p {
     font-size: 14px;
-    line-height: 15px;
+    margin: 0;
   }
 
   .home-top h1 {
     font-size: 30px;
     line-height: normal;
   }
+
   #video img {
     bottom: 4px;
   }
@@ -3421,6 +3528,7 @@ footer .show-xs ul li a {
   .big-step:nth-child(4) {
     padding-top: 251px;
   }
+
   .big-step:nth-child(5) {
     padding-top: 246px;
   }
@@ -3431,12 +3539,15 @@ footer .show-xs ul li a {
   .logo img {
     width: 95%;
   }
+
   #banks-logos .container .row > div img {
     width: 100%;
   }
+
   .news-box .title {
     font-size: 14px;
   }
+
   .news-box .title a {
     width: 30%;
   }
@@ -3448,9 +3559,11 @@ footer .show-xs ul li a {
     width: 33.33%;
     min-height: 105px;
   }
+
   #how-it-works ul li:nth-child(3) {
     border-right: none;
   }
+
   #how-it-works ul li:last-child {
     border-right: medium none;
     float: none;
@@ -3518,7 +3631,32 @@ footer .show-xs ul li a {
   .questions-form .row > div:last-child {
     margin-top: 20px;
   }
+
+  .find-rate .rates-nav .nav > li > a {
+    font-size: 11px;
+    padding: 6px;
+  }
+
+  .find-rate .form-inline .form-group {
+    width: 100%;
+  }
+
+  .find-rate .form-inline .btn {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .find-rate .form-inline .form-group > * {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .results li {
+    width: 49%;
+  }
 }
+
 /* Between M and L ----------- */
 @media (min-width: 992px) and (max-width: 1200px) {
   .hide-m {
@@ -3530,6 +3668,24 @@ footer .show-xs ul li a {
 
   header .contact .btn {
     font-size: 12px;
+  }
+
+  .find-rate .rates-nav .nav > li > a {
+    padding: 10px 14px;
+  }
+
+  .find-rate .form-inline .form-group {
+    width: 40%;
+  }
+
+  .find-rate .form-inline .btn {
+    font-size: 12px;
+    width: 15%;
+  }
+
+  .find-rate .form-inline .form-group > * {
+    width: 100%;
+    margin-right: 0;
   }
 }
 
