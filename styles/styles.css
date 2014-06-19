@@ -56,9 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 32px;
   margin: 0 0 15px;
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 .shadow {
@@ -171,8 +170,8 @@ header .contact {
 }
 
 header .contact .btn {
- margin-top: 5px;
- width: 100%;
+  margin-top: 5px;
+  width: 100%;
 }
 
 header .icon-phone {
@@ -227,7 +226,8 @@ header .icon-phone {
 }
 
 .link-green {
-  color: #8dc63f;
+  color: #8DC63F;
+  font-weight: bold;
 }
 
 .link-green:hover {
@@ -732,12 +732,10 @@ header .icon-phone {
 .find-rate .title {
   background-color: #004993;
   border-radius: 4px;
-  height: 40px;
-  line-height: 40px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 17px;
   font-weight: bold;
-  padding: 0 15px;
+  padding: 8px 15px;
   position: relative;
 }
 
@@ -993,12 +991,10 @@ header .icon-phone {
 #home-articles h5 {
   background-color: #004993;
   border-radius: 4px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 17px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 15px;
   margin: 0;
+  padding: 8px 15px;
 }
 
 .home-article {
@@ -1016,7 +1012,7 @@ header .icon-phone {
 }
 
 .home-article > img {
-  width: 25%;
+  max-width: 25%;
 }
 
 .home-article > div {
@@ -1047,7 +1043,6 @@ header .icon-phone {
   padding: 0;
   margin: 0;
   font-size: 13px;
-  line-height: 22px;
   color: #343535;
   padding: 12px;
   padding-left: 50px;
@@ -1055,8 +1050,8 @@ header .icon-phone {
 }
 
 .testimonial blockquote p {
-  font-size: 13px;
-  line-height: normal;
+  font-size: 14px;
+  line-height: 22px;
   margin: 0;
 }
 
@@ -2072,9 +2067,9 @@ footer .show-xs ul li a {
   border-radius: 4px 4px 0 0;
   color: #FFFFFF;
   font-size: 21px;
-  line-height: 55px;
+  line-height: normal;
   margin: 0 -35px 10px;
-  padding: 0 20px;
+  padding: 15px 20px;
   text-align: left;
 }
 
@@ -2272,6 +2267,10 @@ footer .show-xs ul li a {
 }
 
 /* Apply Online Page ----------- */
+#top.apply-online {
+  background: url("../images/bg-taller.png") repeat-x scroll center bottom #1378d2;
+}
+
 .apply-online .home-top {
   padding-bottom: 25px;
 }
@@ -2966,6 +2965,11 @@ footer .show-xs ul li a {
   .about-steps img {
     margin-bottom: 10px;
   }
+
+  .logo img {
+    margin-top: 3% !important;
+    width: 65% !important;
+  }
 }
 
 /* XS ----------- */
@@ -3013,9 +3017,6 @@ footer .show-xs ul li a {
   }
   .navbar-brand img {
     width: 100%;
-  }
-  .news-box .title {
-    font-size: 12px;
   }
   .news-box .title a {
     width: 30%;
@@ -3115,10 +3116,6 @@ footer .show-xs ul li a {
 
   .contact-page .row > div:last-child {
     margin-bottom: 0;
-  }
-
-  .rates-details-form h3 {
-    font-size: 15px;
   }
 
   .rates-details-form fieldset:last-child .btn {
@@ -3234,9 +3231,51 @@ footer .show-xs ul li a {
   .tabs-wrapper .nav > li {
     margin-right: 4px;
   }
+
+  #top.apply-online {
+    background: url("../images/bg-small.png") repeat-x scroll center bottom #0567c7;
+  }
+
+  .apply-online .home-top h1 {
+    border-bottom: 1px solid #3A91DC;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 -15px 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+
+  .apply-online .home-top p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  .rates-details-form h3 {
+    font-size: 18px;
+  }
+
+  .apply-online .form-group {
+    margin-bottom: 0;
+  }
+
+  .apply-online .home-top ul {
+    border-top: 1px solid #3A91DC;
+    margin: 0 -15px;
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    margin-left: 15px;
+    margin-top: 1%;
+    width: 50%;
+  }
+
+  .questions-form p {
+    text-align: left;
+  }
 }
 
-/* SMALL and less ----------- */
+/* S and less ----------- */
 @media (max-width: 992px) {
   .show-s {
     display: block;
@@ -3387,7 +3426,7 @@ footer .show-xs ul li a {
   }
 }
 
-/* Between Small and XSmall ----------- */
+/* Between S and M ----------- */
 @media (min-width: 768px) and (max-width: 992px) {
   .logo img {
     width: 95%;
@@ -3480,7 +3519,7 @@ footer .show-xs ul li a {
     margin-top: 20px;
   }
 }
-/* Between Large and Medium ----------- */
+/* Between M and L ----------- */
 @media (min-width: 992px) and (max-width: 1200px) {
   .hide-m {
     display: none !important;
@@ -3488,9 +3527,13 @@ footer .show-xs ul li a {
   .show-m {
     display: block;
   }
+
+  header .contact .btn {
+    font-size: 12px;
+  }
 }
 
-/* Between XLarge and Large ----------- */
+/* XL and more ----------- */
 @media (min-width: 1200px) {
   .hide-xl {
     display: none !important;
