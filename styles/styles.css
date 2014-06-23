@@ -650,6 +650,13 @@ header .icon-phone {
   border: none;
 }
 
+#page-title-wrapper {
+  left: 0;
+  position: absolute;
+  top: 125px;
+  width: 100%;
+}
+
 /*Top*/
 #top {
   background: url("../images/main-bg.png") repeat-x scroll center bottom #36a3ec;
@@ -3420,6 +3427,10 @@ footer .show-xs ul li a {
   .rates-details-form fieldset {
     padding-top: 0;
     padding-bottom: 15px;
+  }
+
+  #page-title-wrapper {
+    top: 55px;
   }
 }
 
